@@ -8,7 +8,7 @@ import { Card, CardImg, CardText, CardBody,
         return(
         <div className = 'col-12 col-md-5 m-1'>
             <Card>
-                <CardImg top scr={dish.name} alt={dish}></CardImg>
+                <CardImg top scr={dish.image} alt={dish}></CardImg>
                 <CardBody>
                     <CardTitle>{dish.name}</CardTitle>
                     <CardText>{dish.description}</CardText>
@@ -30,7 +30,7 @@ import { Card, CardImg, CardText, CardBody,
                                 <li key={comment.id}>
                                 <p>{comment.comment}</p>
                                 {
-                                    //<p>--{comment.autor},{new}</p>
+                                    <p>--{comment.autor}</p>
                                 }
                                 </li>
                             );
@@ -44,7 +44,7 @@ import { Card, CardImg, CardText, CardBody,
             ) ;               
     }
 
-    const DishDetali = (props) => {
+    const DishDetail = (props) => {
         
         console.log('component did update');
 
